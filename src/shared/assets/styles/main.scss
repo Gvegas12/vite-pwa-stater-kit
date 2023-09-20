@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+
+@import url("lib/reset.css");
+@import url("config/font.config.css");
+@import "variables/global";
+
+body {
+  font: var(--font-m);
+}
+
+.container {
+  width: 80%; // Это общий класснейм с заранее прописанными стилями. Эта ширина нужна для сайдбара.
+  margin: 0 auto; // Это нужно для центрирования
+}
+
+.opacity-enter {
+  opacity: 0;
+}
+.opacity-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.opacity-exit {
+  opacity: 1;
+}
+.opacity-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
